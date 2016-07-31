@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<title>FreeFi, crea encuesta</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="logo">
+      <img class="logo" title="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/9/92/WiFi_Explorer_Logo.png"
+        alt="FreeFi Logo" width="60" height="60" />
+    </div>
+    <div id="logotext"> FreeFi </div>
+    <h1>Bienvenido</h1>
+  </header>
+
+  <article id="Presentacion">
+    Construya la encuesta 
+  </article>
+
+  <form action="creapreguntas.html" method="POST">
+    <legend class="detalle">Pregunta</legend>
+    <input type="text" placeholder="Pregunta" name="question"><br>
+    <!-- input type="text" placeholder="Tipo de Pregunta" name="tipo" list=TipoEncuesta ><!-->
+
+    <select name="listaTipos" >
+           <option>Respuesta unica</option>
+           <option>Respuesta múltiple</option>
+           <option>Sí/No</option>
+           <option>Texto </option>
+           <option>Texto largo</option>
+    </select>     
+
+    <div id="alternativas" class="listaVariable">
+      <legend class="detalle">Alternativas</legend>
+      <input type="text" placeholder="Alternativa 1" name="choose1"><br>
+      <input type="text" placeholder="Alternativa 2" name="choose2"><br>
+      <input type="text" placeholder="Alternativa 3" name="choose3"><br>
+      <input type="text" placeholder="Alternativa 4" name="choose4"><br>
+      <input type="text" placeholder="Alternativa 5" name="choose5"><br>
+      <button type="submit">Cerrar cuestionario</button>
+      <button type="submit">Aceptar</button>
+    </div>
+  </form>
+
+
+  <footer id="copyrights">
+    <div class="footer">Made by Chubasco</div>
+  </footer>
+  
+  </body>
+  </html>
